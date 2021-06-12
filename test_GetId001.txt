@@ -1,0 +1,14 @@
+﻿<?php
+        namespace Tests;
+
+        use PHPUnit\Framework\TestCase;
+        use crud;
+
+        class GetIdTest extends TestCase
+        {
+            public function testGetId()
+            {
+                $crud = new crud();
+                $this->assertTrue($crud->getID(1));
+            }
+        }
